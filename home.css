@@ -107,7 +107,7 @@ z-index: 1;
     justify-content: center;
     flex-direction: column;
     z-index: 1;
-    margin: 10px;
+    padding-bottom: 45vh;
 }
 
 #about{
@@ -116,14 +116,6 @@ z-index: 1;
     justify-content: center;
     flex-direction: column;
     z-index: 1;
-}
-#about-shader{
-    background-color: rgba(71, 68, 68, 0.576);
-    height: 100px;
-    width: 100px;
-    z-index: 0;
-  
-    
 }
 /* .about-me{
     display: flex;
@@ -139,16 +131,14 @@ z-index: 1;
 } */
 .about-me {
     background-color: rgba(58, 56, 56, 0.716);
-    background-size: cover;
+    
     background-clip: content-box;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding-top: 50vh;
-    margin-bottom: 20vh;
-    margin-left: 5vw;
-    margin-right: 50vw;
+    width:fit-content;
+    padding-left: 2vh;
     font-size: 25px;
     font-weight: bolder;
     z-index: 1;
