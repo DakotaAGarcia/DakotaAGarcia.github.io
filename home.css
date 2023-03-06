@@ -159,7 +159,7 @@ z-index: 1;
     align-items:flex-end;
     justify-content: center;
     flex-direction: column;
-    margin-top: 20vh;
+    
     margin-bottom: 20vh;
     margin-right: 5vw;
     font-size: 25px;
@@ -191,5 +191,29 @@ z-index: 1;
 .contact-link{
     list-style-type: none;
     text-decoration: none;
-    color: #ccc;
+    color: white;
+}
+.contact-link:hover{
+    color:#080808;
+}
+.left-title{
+    padding-top: 10vh;
+    padding-left: 3vw;
+    padding-bottom: 5vh;
+    color: rgb(166, 43, 43)
+}
+.right-title{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-right: 14vw;
+    font-size: 25px;
+    z-index: 1;
+    color: rgb(166, 43, 43)
+}
+.bottom-title{
+    display: flex;
+    color:  rgb(166, 43, 43);
 }
