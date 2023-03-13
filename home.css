@@ -22,7 +22,7 @@ body{
     background-image: url(images/profilePic.jpg);
     background-size: contain;
     background-position: center;
-    z-index: 1;
+    /* z-index: 1; */
     height: 25vh;
     width: 25vh;
     border-radius: 75%;
@@ -44,6 +44,9 @@ z-index: 1;
 .navBar ul{
     list-style-type: none;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.625);
+    height: fit-content;
+    border-radius: 20px;
     
     
 }
@@ -56,7 +59,7 @@ z-index: 1;
 }
 
 .navBar li{
-    padding-top: 5%;
+  
     margin: 2vw;
     color:rgb(166, 43, 43)
 }
@@ -101,13 +104,21 @@ z-index: 1;
     99% {color: transparent;}
     100% {color: black;}
 }
-#buffer{
+.buffer{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     z-index: 1;
-    padding-bottom: 45vh;
+    padding-bottom: 38vh;
+}
+.buffer2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  padding-top: 38vh;
 }
 
 #about{
@@ -117,62 +128,83 @@ z-index: 1;
     flex-direction: column;
     z-index: 1;
 }
-/* .about-me{
-    display: flex;
+
+
+  .about-me-container{
+    background-color: rgba(58, 56, 56, 0.716);
+    background-size: contain;
+    display: flexbox;
+    
     align-items:flex-start;
     justify-content: center;
     flex-direction: column;
-    padding-top: 50vh;
-    margin-bottom:20vh;
-    margin-left: 5vw;
-    font-size: 25px;
+    height: fit-content;
+    width: 40vw;
+    padding: 10px;
+    font-size: 120%;
+    border-radius: 10px;
     font-weight: bolder;
-    z-index: 1;
-} */
-.about-me {
-    background-color: rgba(58, 56, 56, 0.716);
-    
-    background-clip: content-box;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    width:fit-content;
-    padding-left: 2vh;
-    font-size: 25px;
-    font-weight: bolder;
-    z-index: 1;
-  }
-#experience{
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    margin-right: 5vw;
-    font-size: 25px;
     z-index: 1;
 }
-.examples{
+@media(max-width: 845px){
+  .about-me-container{
+    font-size: 100%;
+    width:100%;
+  }
+}
+.about-me{
+    margin: 0;
+    padding: 5px;
+}
+.example-container{
     display: flex;
     align-items:flex-end;
     justify-content: center;
     flex-direction: column;
-    
-    margin-bottom: 20vh;
-    margin-right: 5vw;
-    font-size: 25px;
+    overflow: break-word;
+    margin-top: 22vh;
     z-index: 1;
+}
+.right-title-container{
+    background-color: rgba(255, 255, 255, 0.549);
+    display: flexbox;
+    background-size: contain;
+    width: fit-content;
+    margin-top: 10px;
+    margin-right: 12vw;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+}
+.right-title{
+    padding: 10px;
+    color: rgb(166, 43, 43);
+}
+
+.examples{
+    background-color: rgba(58, 56, 56, 0.716);
+    background-size: contain;
+    display: flexbox;
+    align-items:flex-end;
+
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin-right: 5VW;
+    font-size: 100%;
+    border-radius: 10px;
+    font-weight: bolder;
+    overflow: break-word;
+  
 }
 #contact{
     display: flex;
     align-items:flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-top: 40vh;
+    margin-top: 20vh;
     margin-left: 1vw;
-    font-size: 25px;
     z-index: 1;
     
     
@@ -182,10 +214,10 @@ z-index: 1;
     align-items:flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-top: 400px;
+    margin-top: 20vh;
     margin-left: 5vw;
-    padding-bottom:15vh;
-    font-size: 25px;
+    overflow: break-word;
+    padding-bottom:300px;
     z-index: 1;
 }
 .contact-link{
@@ -196,24 +228,39 @@ z-index: 1;
 .contact-link:hover{
     color:#080808;
 }
-.left-title{
-    padding-top: 10vh;
-    padding-left: 3vw;
-    padding-bottom: 5vh;
-    color: rgb(166, 43, 43)
+.left-title-container{
+    background-color: rgba(255, 255, 255, 0.549);
+    display: flexbox;
+    background-size: contain;
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+
 }
-.right-title{
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 40vh;
-    margin-right: 14vw;
-    font-size: 25px;
-    z-index: 1;
-    color: rgb(166, 43, 43)
+.left-title{
+    padding: 10px;
+     color: rgb(166, 43, 43);
+    
+}
+
+
+
+.bottom-title-container{
+    background-color: rgba(255, 255, 255, 0.549);
+    display: flexbox;
+    background-size: contain;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+}
+.email{
+    font-size: 90%;
 }
 .bottom-title{
+    padding: 10px;
     display: flex;
     color:  rgb(166, 43, 43);
 }
